@@ -11,6 +11,9 @@ module Blog
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
+    config.active_job.queue_adapter = :delayed_job
+    config.active_job.queue_name_prefix = Rails.env
+    
     config.before_configuration do
       env_file = Rails.root.join("config/local_env.yml")
 

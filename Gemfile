@@ -15,6 +15,12 @@ gem "sqlite3", "~> 1.4"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
+# Using clockwork to run scheduled jobs
+gem "clockwork"
+
+# Using delayed job for queue backend
+gem "delayed_job_active_record", "~> 4.1.2"
+
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 
